@@ -1,0 +1,36 @@
+{
+
+  "manifest_version": 2,
+  "name": "Anonbot",
+  "version": "0.0.1",
+ 
+  "description": "Anonbot extension for plug.dg/anonwave. All credits to https://github.com/basicBot/source",
+  "icons": {
+    "48": "icons/plug.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "eyes_on1y@icloud.com"
+    }
+  },
+
+  "web_accessible_resources": [
+    "basicBot.js", "extension.js", "lang/*.json", "blacklists/*.json"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/plug.png",
+    "theme_icons": [{
+      "light": "icons/plug-32.png",
+      "dark": "icons/plug-32.png",
+      "size": 32
+  }],
+    "default_title": "Anonbot",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+
+}
